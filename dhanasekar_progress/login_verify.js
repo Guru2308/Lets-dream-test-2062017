@@ -15,7 +15,8 @@ function redirect() {
     if (cred[mail_id] == cred[pass]) {
       window.location.href =
         "C:/xampp/htdocs/lets_dream/Lets-dream-test-2062017/Lets-dream-Mentor-dashboard/index.html";
-    }
+    } 
+    
   } else {
     if (cred[mail_id] == cred[pass]) {
       window.location.href =
