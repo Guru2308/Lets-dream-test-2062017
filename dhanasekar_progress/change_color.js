@@ -1,13 +1,9 @@
 console.log("connected");
-var but = document.querySelectorAll(".list-group-item");
+var but = document.querySelectorAll(".names");
 
 but.forEach((i) => {
   i.addEventListener("click", function () {
-    but.forEach((e) => {
-      e.classList.remove("active");
-    });
-
-    i.classList.add("active");
+    
     document.querySelector(".model_name").textContent = i.textContent;
     document.querySelector(".model_mail").textContent =
       modal_mail[i.textContent];
