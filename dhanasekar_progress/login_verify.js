@@ -10,17 +10,16 @@ const mail_list = {
 };
 const sub = document.getElementsById("sub");
 function redirect() {
-  console.log("hello1");
-  if (mail_list == 1) {
+  
+  if (mail_list[mail_id] == 1) {
     if (cred[mail_id] == cred[pass]) {
-      window.location.href =
-        "../Lets-dream-Mentor-dashboard/index.html";
+      window.location.href = "../Lets-dream-Mentor-dashboard/index.html";
+      console.log("hello1");
     } 
     
   } else {
     if (cred[mail_id] == cred[pass]) {
-      window.location.href =
-        "../Lets-dream-Mentee-dashboard/index.html";
+      window.location.href = "../Lets-dream-Mentee-dashboard/index.html";
     }
   }
 }
