@@ -10,29 +10,25 @@ const mail_list = {
 };
 
 function redirect() {
-
   console.log("hello1");
   if (mail_list[mail_id.value] == 1) {
     if (cred[mail_id] == cred[pass]) {
-      window.location.href =
-        "../Lets-dream-Mentor-dashboard/index.html";
-    }
-  } else if(mail_list[mail_id.value]==2) {
-    if (cred[mail_id] == cred[pass]) {
-      window.location.href =
-        "../Lets-dream-Mentee-dashboard/index.html";
-
-  
-  if (mail_list[mail_id] == 1) {
-    if (cred[mail_id] == cred[pass]) {
       window.location.href = "../Lets-dream-Mentor-dashboard/index.html";
-      console.log("hello1");
-    } 
-    
-  } else {
+    }
+  } else if (mail_list[mail_id.value] == 2) {
     if (cred[mail_id] == cred[pass]) {
       window.location.href = "../Lets-dream-Mentee-dashboard/index.html";
+    }
 
+    if (mail_list[mail_id] == 1) {
+      if (cred[mail_id] == cred[pass]) {
+        window.location.href = "../Lets-dream-Mentor-dashboard/index.html";
+        console.log("hello1");
+      }
+    } else {
+      if (cred[mail_id] == cred[pass]) {
+        window.location.href = "../Lets-dream-Mentee-dashboard/index.html";
+      }
     }
   }
 }
