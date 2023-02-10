@@ -13,7 +13,7 @@ function redirect() {
   console.log("hello1");
   if (mail_list[mail_id.value] == 1) {
     if (cred[mail_id] == cred[pass]) {
-      window.location.href = "../Lets-dream-Mentor-dashboard/index.html";
+      window.location.href = "../Lets-dream-Mentor-dashboard/index.php";
     }
   } else if (mail_list[mail_id.value] == 2) {
     if (cred[mail_id] == cred[pass]) {
@@ -22,7 +22,7 @@ function redirect() {
 
     if (mail_list[mail_id] == 1) {
       if (cred[mail_id] == cred[pass]) {
-        window.location.href = "../Lets-dream-Mentor-dashboard/index.html";
+        window.location.href = "../Lets-dream-Mentor-dashboard/index.php";
         console.log("hello1");
       }
     } else {
@@ -30,7 +30,5 @@ function redirect() {
         window.location.href = "../Lets-dream-Mentee-dashboard/index.html";
       }
     }
-  }
-}
   }
 }
