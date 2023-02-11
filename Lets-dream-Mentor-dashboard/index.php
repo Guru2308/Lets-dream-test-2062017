@@ -35,7 +35,7 @@
   <meta data-intl-tel-input-cdn-path="intlTelInput/" />
 </head>
 
-<body data-home-page="Mentor-Dashboard.html" data-home-page-title="Mentor-Dashboard" class="u-body u-stick-footer u-xl-mode" data-lang="en">
+<body data-home-page="index.php" data-home-page-title="Mentor-Dashboard" class="u-body u-stick-footer u-xl-mode" data-lang="en">
   <header class="u-box-shadow u-clearfix u-header u-header" id="sec-bc06">
     <div class="u-clearfix u-sheet u-sheet-1">
       <img class="u-image u-image-contain u-image-default u-image-1" src="images/Letsdream.png" alt="" data-image-width="584" data-image-height="427" />
@@ -65,7 +65,7 @@
         <div class="u-custom-menu u-nav-container">
           <ul class="u-nav u-spacing-30 u-unstyled u-nav-1">
             <li class="u-nav-item">
-              <a class="u-border-2 u-border-active-grey-90 u-border-hover-grey-50 u-border-no-left u-border-no-right u-border-no-top u-button-style u-nav-link u-text-active-grey-90 u-text-grey-90 u-text-hover-grey-90" href="Mentor-Dashboard.html" style="padding: 10px 0px">Dashboard</a>
+              <a class="u-border-2 u-border-active-grey-90 u-border-hover-grey-50 u-border-no-left u-border-no-right u-border-no-top u-button-style u-nav-link u-text-active-grey-90 u-text-grey-90 u-text-hover-grey-90" href="index.php" style="padding: 10px 0px">Dashboard</a>
             </li>
             <li class="u-nav-item">
               <a class="u-border-2 u-border-active-grey-90 u-border-hover-grey-50 u-border-no-left u-border-no-right u-border-no-top u-button-style u-nav-link u-text-active-grey-90 u-text-grey-90 u-text-hover-grey-90" href="Broadcast.html" style="padding: 10px 0px">Broadcast</a>
@@ -81,7 +81,7 @@
               <div class="u-menu-close"></div>
               <ul class="u-align-center u-nav u-popupmenu-items u-unstyled u-nav-2">
                 <li class="u-nav-item">
-                  <a class="u-button-style u-nav-link" href="Mentor-Dashboard.html">Dashboard</a>
+                  <a class="u-button-style u-nav-link" href="index.php">Dashboard</a>
                 </li>
                 <li class="u-nav-item">
                   <a class="u-button-style u-nav-link" href="Broadcast.html">Broadcast</a>
