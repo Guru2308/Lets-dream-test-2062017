@@ -1,5 +1,6 @@
 <!-- redirect the user based on mentor and mentee credentials linked with db -->
 <?php
+session_start();
 include '../Lets-dream-Mentor-dashboard/db_connection/config.php';
 $query = 'SELECT * FROM tbl_users';
 $result = mysqli_query($conn,$query);
@@ -18,7 +19,7 @@ foreach($feedback as $user){
                 echo "User Logged In";
                 header("Location: ../Lets-dream-Mentee-dashboard/index.html");
             }else{
-                echo "Password is wrong";
+                $_SESSION['status'] = "Password is wrong";
             }
         }
     }elseif($user["roleid"]==2){
@@ -27,7 +28,7 @@ foreach($feedback as $user){
                 echo "User Logged In";
                 header("Location: ../Lets-dream-Mentor-dashboard/index.php");
             }else{
-                echo "Password is wrong";
+                $_SESSION['status'] = "Password is wrong";
             }
         }
     }
