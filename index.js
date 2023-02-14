@@ -1,1 +1,1 @@
-window.location.href = "./LOGIN_PAGE/index.php";
+window.location.href = "./About/index.html";

@@ -63,7 +63,7 @@
           <ul class="u-nav u-spacing-30 u-unstyled u-nav-1">
             <li class="u-nav-item"><a class="u-border-2 u-border-active-grey-90 u-border-hover-grey-50 u-border-no-left u-border-no-right u-border-no-top u-button-style u-nav-link u-text-active-grey-90 u-text-grey-90 u-text-hover-grey-90" href="Home.html" style="padding: 10px 0px;">Home</a>
             </li>
-            <li class="u-nav-item"><a class="u-border-2 u-border-active-grey-90 u-border-hover-grey-50 u-border-no-left u-border-no-right u-border-no-top u-button-style u-nav-link u-text-active-grey-90 u-text-grey-90 u-text-hover-grey-90" href="../dream/index.html" style="padding: 10px 0px;">About</a>
+            <li class="u-nav-item"><a class="u-border-2 u-border-active-grey-90 u-border-hover-grey-50 u-border-no-left u-border-no-right u-border-no-top u-button-style u-nav-link u-text-active-grey-90 u-text-grey-90 u-text-hover-grey-90" href="../About/index.html" style="padding: 10px 0px;">About</a>
             </li>
             <li class="u-nav-item"><a class="u-border-2 u-border-active-grey-90 u-border-hover-grey-50 u-border-no-left u-border-no-right u-border-no-top u-button-style u-nav-link u-text-active-grey-90 u-text-grey-90 u-text-hover-grey-90" href="https://letusdream.org/" style="padding: 10px 0px;">Dreams</a>
             </li>
@@ -76,7 +76,7 @@
               <ul class="u-align-center u-nav u-popupmenu-items u-unstyled u-nav-2">
                 <li class="u-nav-item"><a class="u-button-style u-nav-link" href="Home.html">Home</a>
                 </li>
-                <li class="u-nav-item"><a class="u-button-style u-nav-link" href="../dream/index.html">About</a>
+                <li class="u-nav-item"><a class="u-button-style u-nav-link" href="../About/index.html">About</a>
                 </li>
                 <li class="u-nav-item"><a class="u-button-style u-nav-link" href="https://letusdream.org/">Dreams</a>
                 </li>
