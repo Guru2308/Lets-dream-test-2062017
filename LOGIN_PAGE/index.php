@@ -112,7 +112,8 @@
                     
                     <button type="submit" class="btn btn-primary">Submit</button>
                   </form>
-                  <?php include 'login.php' ?>
+                 <?php include 'login.php';
+                   ?> 
                 </div>
               </div>
             </div>

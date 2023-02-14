@@ -1,4 +1,4 @@
-console.log("connected");
+//console.log("connected");
 //getting
 
 var but = document.querySelectorAll(".names");
