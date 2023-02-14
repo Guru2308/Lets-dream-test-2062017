@@ -1,4 +1,6 @@
 <?php
+include "./index.php";
+
     if(isset($_POST['submit']))
     {
         $title = $_POST['title'];
@@ -43,7 +45,10 @@
     $rs = mysqli_query($con, $sql);
     if($rs)
     {
-        echo "Entries added!";
+        // echo "Entries added!";
+        ?>
+
+        <?php
     }else{
         echo "nope";
     }

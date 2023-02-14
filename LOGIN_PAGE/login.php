@@ -10,17 +10,16 @@ $email=$_POST["email"];//receiving name field value in $name variable
 $password=$_POST["password"];//receiving password field value in $password variable  
 
 // status creation
-<?php
-  if(isset($_SESSION['status'])){
-?>
-<div class="alert alert-success">
-  <h5><?=$_SESSION['status']; ?></h5>
-</div>
-<?php
-  unset($_SESSION['status']); 
-}
-?>
-<!--  -->
+// <?php
+//   if(isset($_SESSION['status'])){
+// ?>
+// <div class="alert alert-success">
+//   <h5><?=$_SESSION['status']; ?></h5>
+// </div>
+// <?php
+//   unset($_SESSION['status']); 
+// }
+
   
 foreach($feedback as $user){
     

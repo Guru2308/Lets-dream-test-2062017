@@ -147,7 +147,7 @@
           <div class="u-align-left u-container-style u-custom-color-1 u-hover-feature u-shape-rectangle u-tab-pane u-tab-pane-2" id="tab-14b7" role="tabpanel">
             <div class="u-container-layout u-container-layout-2">
               <div class="u-form u-form-1">
-                <form action="assignment.php" method="post">
+                <form action="assignment.php" method="post" onSubmit="alert('Assigned Successfully.');" >
                   <div class="u-form-group u-form-name">
                     <label for="title" class="u-custom-font u-font-montserrat u-label">Assignment Title</label>
                     <input type="text" id="title" name="title" class="u-border-1 u-border-grey-30 u-custom-font u-font-montserrat u-input u-input-rectangle u-white" required="" placeholder="Title of the assignment" />
@@ -166,7 +166,7 @@
                   </div> -->
                   <div class="u-align-left u-form-group u-form-submit">
                     <a href="#" class="u-border-none u-btn u-btn-submit u-button-style u-custom-color-7 u-custom-font u-font-montserrat u-btn-4">Submit</a>
-                    <input type="submit" value="submit" name="submit" class="u-form-control-hidden" />
+                    <input type="submit" value="submit" name="submit" id="nextStep" class="u-form-control-hidden" />
                   </div>
                   <div class="u-form-send-message u-form-send-success">
                     Thank you! Your message has been sent.
