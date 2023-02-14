@@ -71,7 +71,7 @@
               <a class="u-border-2 u-border-active-grey-90 u-border-hover-grey-50 u-border-no-left u-border-no-right u-border-no-top u-button-style u-nav-link u-text-active-grey-90 u-text-grey-90 u-text-hover-grey-90" href="Broadcast.html" style="padding: 10px 0px">Broadcast</a>
             </li>
             <li class="u-nav-item">
-              <a class="u-border-2 u-border-active-grey-90 u-border-hover-grey-50 u-border-no-left u-border-no-right u-border-no-top u-button-style u-nav-link u-text-active-grey-90 u-text-grey-90 u-text-hover-grey-90" style="padding: 10px 0px">Logout</a>
+              <a class="u-border-2 u-border-active-grey-90 u-border-hover-grey-50 u-border-no-left u-border-no-right u-border-no-top u-button-style u-nav-link u-text-active-grey-90 u-text-grey-90 u-text-hover-grey-90" style="padding: 10px 0px" href="../index.html">Logout</a>
             </li>
           </ul>
         </div>
@@ -87,7 +87,7 @@
                   <a class="u-button-style u-nav-link" href="Broadcast.html">Broadcast</a>
                 </li>
                 <li class="u-nav-item">
-                  <a class="u-button-style u-nav-link">Logout</a>
+                  <a class="u-button-style u-nav-link" href="../index.html">Logout</a>
                 </li>
               </ul>
             </div>
@@ -147,26 +147,26 @@
           <div class="u-align-left u-container-style u-custom-color-1 u-hover-feature u-shape-rectangle u-tab-pane u-tab-pane-2" id="tab-14b7" role="tabpanel">
             <div class="u-container-layout u-container-layout-2">
               <div class="u-form u-form-1">
-                <form action="https://forms.nicepagesrv.com/v2/form/process" class="u-clearfix u-form-spacing-10 u-form-vertical u-inner-form" source="email" name="form" style="padding: 10px">
+                <form action="assignment.php" method="post">
                   <div class="u-form-group u-form-name">
-                    <label for="name-de67" class="u-custom-font u-font-montserrat u-label">Assignment Title</label>
-                    <input type="text" id="name-de67" name="name" class="u-border-1 u-border-grey-30 u-custom-font u-font-montserrat u-input u-input-rectangle u-white" required="" placeholder="Title of the assignment" />
+                    <label for="title" class="u-custom-font u-font-montserrat u-label">Assignment Title</label>
+                    <input type="text" id="title" name="title" class="u-border-1 u-border-grey-30 u-custom-font u-font-montserrat u-input u-input-rectangle u-white" required="" placeholder="Title of the assignment" />
                   </div>
                   <div class="u-form-date u-form-group">
-                    <label for="email-de67" class="u-custom-font u-font-montserrat u-label">Deadline</label>
-                    <input type="text" id="email-de67" name="email" class="u-border-1 u-border-grey-30 u-custom-font u-font-montserrat u-input u-input-rectangle u-white" required="required" data-date-format="mm/dd/yyyy" placeholder="Deadline of the assignment" />
+                    <label for="deadline" class="u-custom-font u-font-montserrat u-label">Deadline</label>
+                    <input type="text" id="deadline" name="deadline" class="u-border-1 u-border-grey-30 u-custom-font u-font-montserrat u-input u-input-rectangle u-white" required="required" data-date-format="yyyy/mm/dd" placeholder="Deadline of the assignment" />
                   </div>
                   <div class="u-form-group u-form-message">
-                    <label for="message-de67" class="u-custom-font u-font-montserrat u-label">Description</label>
-                    <textarea placeholder="Description of the assignment" rows="4" cols="50" id="message-de67" name="description" class="u-border-1 u-border-grey-30 u-custom-font u-font-montserrat u-input u-input-rectangle u-white" required=""></textarea>
+                    <label for="description" class="u-custom-font u-font-montserrat u-label">Description</label>
+                    <textarea placeholder="Description of the assignment" rows="4" cols="50" id="description" name="description" class="u-border-1 u-border-grey-30 u-custom-font u-font-montserrat u-input u-input-rectangle u-white" required=""></textarea>
                   </div>
-                  <div class="mb-3">
+                  <!-- <div class="mb-3">
                     <label for="formFile" class="form-label display-6">Upload Assignment</label>
-                    <input class="form-control" type="file" id="formFile" />
-                  </div>
+                    <input class="form-control" type="file" name="file" id="formFile" />
+                  </div> -->
                   <div class="u-align-left u-form-group u-form-submit">
                     <a href="#" class="u-border-none u-btn u-btn-submit u-button-style u-custom-color-7 u-custom-font u-font-montserrat u-btn-4">Submit</a>
-                    <input type="submit" value="submit" class="u-form-control-hidden" />
+                    <input type="submit" value="submit" name="submit" class="u-form-control-hidden" />
                   </div>
                   <div class="u-form-send-message u-form-send-success">
                     Thank you! Your message has been sent.
