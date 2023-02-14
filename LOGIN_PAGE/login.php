@@ -1,48 +1,73 @@
 <!-- redirect the user based on mentor and mentee credentials linked with db -->
 <?php
-session_start();
-include '../Lets-dream-Mentor-dashboard/db_connection/config.php';
-$query = 'SELECT * FROM tbl_users';
-$result = mysqli_query($conn,$query);
-$feedback = mysqli_fetch_all($result,MYSQLI_ASSOC);
 
-$email=$_POST["email"];//receiving name field value in $name variable  
-$password=$_POST["password"];//receiving password field value in $password variable  
+//error_reporting(0);
+include '../Lets-dream-Mentor-dashboard/db_connection/config.php';
+//get mentor table 
+$query = 'SELECT * FROM mentor_table';
+$result = mysqli_query($conn, $query);
+$mentor_list = mysqli_fetch_all($result, MYSQLI_ASSOC);
+//get mentee table
+$query = 'SELECT * FROM mentee_table';
+$result = mysqli_query($conn, $query);
+$mentee_list =  mysqli_fetch_all($result, MYSQLI_ASSOC);
+
+$email =  $_POST["email"] ?? null; //receiving name field value in $name variable  
+$password = $_POST["password"] ?? null; //receiving password field value in $password variable  
+
+echo $email;
+// Check connection
+if ($conn->connect_error) {
+  die("Connection failed: " . $conn->connect_error);
+}
+$sql = "INSERT INTO recieve (recieved)
+VALUES ('$email')";
+
+if ($conn->query($sql) === TRUE) {
+  //echo "Row is inserted";
+
+} else {
+  echo "Error: " . $sql . "<br>" . $conn->error;
+}
+
 
 // status creation
-// <?php
-//   if(isset($_SESSION['status'])){
-// ?>
-// <div class="alert alert-success">
-//   <h5><?=$_SESSION['status']; ?></h5>
-// </div>
-// <?php
-//   unset($_SESSION['status']); 
-// }
 
-  
-foreach($feedback as $user){
-    
-    echo '<br>';
 
-    if($user["roleid"]==3){
-        if($user["email"] == $email){
-            if($user["password"] == $password){
-                echo "User Logged In";
-                header("Location: ../Lets-dream-Mentee-dashboard/index.html");
-            }else{
-                $_SESSION['status'] = "Password is wrong";
-            }
-        }
-    }elseif($user["roleid"]==2){
-        if($user["email"] == $email){
-            if($user["password"] == $password){
-                echo "User Logged In";
-                header("Location: ../Lets-dream-Mentor-dashboard/index.php");
-            }else{
-                $_SESSION['status'] = "Password is wrong";
+function return_details($mentee_list,$mentor_list,$email,$password)
+{
+    foreach ($mentee_list as $mentee) {
+
+        if ($mentee["mentee_mail"] == $email) {
+            if ($mentee["mentee_pass"] == $password) {
+
+               // return $mentee;
+                $url = "Location: ../Lets-dream-Mentee-dashboard/index.html";
+               header($url);
+               break;
+            } else {
+                //return null;
+                echo "Password is wrong";
             }
         }
     }
+
+
+    foreach ($mentor_list as $mentor) {
+
+        if ($mentor["mentor_mail"] == $email) {
+            if ($mentor["mentor_pass"] == $password) {
+               // return $mentor;
+                $url = "Location: ../Lets-dream-Mentor-dashboard/index.php";
+                header($url);
+                break;
+            } else {
+               // return null;
+                echo "Password is wrong";
+            }
+        }
+    }
+
     
 }
+ return_details($mentee_list,$mentor_list,$email,$password);
