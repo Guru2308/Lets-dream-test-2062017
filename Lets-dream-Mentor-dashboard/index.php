@@ -71,7 +71,7 @@
               <a class="u-border-2 u-border-active-grey-90 u-border-hover-grey-50 u-border-no-left u-border-no-right u-border-no-top u-button-style u-nav-link u-text-active-grey-90 u-text-grey-90 u-text-hover-grey-90" href="Broadcast.html" style="padding: 10px 0px">Broadcast</a>
             </li>
             <li class="u-nav-item">
-              <a class="u-border-2 u-border-active-grey-90 u-border-hover-grey-50 u-border-no-left u-border-no-right u-border-no-top u-button-style u-nav-link u-text-active-grey-90 u-text-grey-90 u-text-hover-grey-90" style="padding: 10px 0px" href="../index.html">Logout</a>
+              <a class="u-border-2 u-border-active-grey-90 u-border-hover-grey-50 u-border-no-left u-border-no-right u-border-no-top u-button-style u-nav-link u-text-active-grey-90 u-text-grey-90 u-text-hover-grey-90" style="padding: 10px 0px" href="../LOGIN_PAGE/index.php">Logout</a>
             </li>
           </ul>
         </div>
@@ -87,7 +87,7 @@
                   <a class="u-button-style u-nav-link" href="Broadcast.html">Broadcast</a>
                 </li>
                 <li class="u-nav-item">
-                  <a class="u-button-style u-nav-link" href="../index.html">Logout</a>
+                  <a class="u-button-style u-nav-link" href="../LOGIN_PAGE/index.php">Logout</a>
                 </li>
               </ul>
             </div>

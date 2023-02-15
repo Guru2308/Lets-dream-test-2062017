@@ -1,11 +1,12 @@
 <!-- this page outputs names from sql database -->
 <?php
 // error_reporting(0);
-$root_folder = $_SERVER['DOCUMENT_ROOT'];
+// $root_folder = $_SERVER['DOCUMENT_ROOT'];
 include 'config.php';
 mysqli_query($conn,"DELETE FROM `recieve`  WHERE recieved = '' ");
 $query = 'SELECT * FROM recieve ORDER BY id DESC LIMIT 1;';
 $result = mysqli_query($conn, $query);
+
 $feedback_display = mysqli_fetch_all($result, MYSQLI_ASSOC);
 
 
@@ -13,7 +14,7 @@ $mail= $feedback_display[0]['recieved'];
 
 // $query_delete = 'TRUNCATE TABLE recieve' ;
 // mysqli_query($conn,$query_delete);
-require $root_folder.'/lets_dream/LOGIN_PAGE/login.php';
+require '/Applications/XAMPP/xamppfiles/htdocs/Lets-dream-test-2062017/LOGIN_PAGE/login.php';
 $query = 'SELECT * FROM mentee_table';
 $result = mysqli_query($conn, $query);
 $mentee_list = mysqli_fetch_all($result, MYSQLI_ASSOC);
