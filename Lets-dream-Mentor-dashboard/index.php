@@ -142,7 +142,7 @@
               
 
               <p class="u-text u-text-default u-text-1">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, accusamus.
+                ...
               </p>
             </div>
           </div>
