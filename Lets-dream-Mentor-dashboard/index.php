@@ -1,3 +1,5 @@
+<?php
+?>
 <!DOCTYPE html>
 <html style="font-size: 16px" lang="en">
 
