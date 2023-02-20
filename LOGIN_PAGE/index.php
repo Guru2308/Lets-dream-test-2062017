@@ -83,6 +83,7 @@
             </div>
             <div class="button-panel">
               <input type="submit" class="button" title="Sign In" value="Sign In"></input>
+              <input class="button my-3" title="forget" value="Forget Passoword"></input>
             </div>
           </form>
           <div class="form-footer">
