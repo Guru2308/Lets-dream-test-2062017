@@ -1,9 +1,7 @@
-console.log("helooo");
-var res = document.getElementsByClassName(".email_js");
-
-if(res != null){
-    res = res.
-    console.log(res);
-    console.log("asfalsf");
-
-}
+console.log("jelj");
+var clear = document.querySelector(".clear");
+clear.addEventListener("click",function(){
+    console.log("gsdsdfs");
+    document.querySelector(".email1").textContent = "";
+    document.querySelector(".pass1").textContent = "";
+})
