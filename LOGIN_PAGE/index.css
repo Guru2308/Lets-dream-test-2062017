@@ -1,130 +1,97 @@
- .u-section-1 {
-  background-image: none;
+/* Fonts */
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400);
+
+/* fontawesome */
+@import url(http://weloveiconfonts.com/api/?family=fontawesome);
+[class*="fontawesome-"]:before {
+  font-family: 'FontAwesome', sans-serif;
 }
 
-.u-section-1 .u-sheet-1 {
-  min-height: 692px;
+/* Simple Reset */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+/* body */
+body {
+  background: #e9e9e9;
+  color: #5e5e5e;
+  font: 400 87.5%/1.5em 'Open Sans', sans-serif;
 }
 
-.u-section-1 .u-layout-wrap-1 {
-  margin: 60px auto 60px 0;
+/* Form Layout */
+.form-wrapper {
+  background: #fafafa;
+  margin: 3em auto;
+  padding: 0 1em;
+  max-width: 370px;
 }
 
-.u-section-1 .u-image-1 {
-  background-image: linear-gradient(0deg, rgba(0,0,0,0.25), rgba(0,0,0,0.25)), url("https://www.thehighereducationreview.com/newsimagespl/6JS009fz.jpeg");
-  background-position: 50% 50%;
-  min-height: 572px;
+h1 {
+  text-align: center;
+  padding: 1em 0;
 }
 
-.u-section-1 .u-container-layout-1 {
-  padding: 30px 60px;
+form {
+  padding: 0 1.5em;
 }
 
-.u-section-1 .u-text-1 {
-
+.form-item {
+  margin-bottom: 0.75em;
+  width: 100%;
 }
 
-.u-section-1 .u-layout-cell-2 {
-  min-height: 572px;
+.form-item input {
+  background: #fafafa;
+  border: none;
+  border-bottom: 2px solid #e9e9e9;
+  color: #666;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1em;
+  height: 50px;
+  transition: border-color 0.3s;
+  width: 100%;
 }
 
-.u-section-1 .u-container-layout-2 {
-  padding: 30px 0;
+.form-item input:focus {
+  border-bottom: 2px solid #c0c0c0;
+  outline: none;
 }
 
-.u-section-1 .u-form-1 {
-  height: 218px;
-  width: 526px;
-  margin: 135px auto 0;
+.button-panel {
+  margin: 2em 0 0;
+  width: 100%;
 }
 
-.u-section-1 .u-input-1 {
-  font-size: 1.25rem;
+.button-panel .button {
+  background: #f16272;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  height: 50px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.2em;
+  letter-spacing: 0.05em;
+  text-align: center;
+  text-transform: uppercase;
+  transition: background 0.3s ease-in-out;
+  width: 100%;
 }
 
-.u-section-1 .u-input-2 {
-  font-size: 1.25rem;
+.button:hover {
+  background: #ee3e52;
 }
 
-@media (max-width: 1199px) {
-  .u-section-1 .u-sheet-1 {
-    min-height: 592px;
-  }
-
-  .u-section-1 .u-layout-wrap-1 {
-    margin-right: initial;
-    margin-left: initial;
-  }
-
-  .u-section-1 .u-image-1 {
-    min-height: 472px;
-  }
-
-  .u-section-1 .u-text-1 {
-    margin-right: 20px;
-  }
-
-  .u-section-1 .u-layout-cell-2 {
-    min-height: 472px;
-  }
-
-  .u-section-1 .u-form-1 {
-    width: 470px;
-  }
+.form-footer {
+  font-size: 1em;
+  padding: 2em 0;
+  text-align: center;
 }
 
-@media (max-width: 991px) {
-  .u-section-1 .u-sheet-1 {
-    min-height: 482px;
-  }
-
-  .u-section-1 .u-image-1 {
-    min-height: 362px;
-  }
-
-  .u-section-1 .u-container-layout-1 {
-    padding-left: 30px;
-    padding-right: 30px;
-  }
-
-  .u-section-1 .u-text-1 {
-    margin-right: 0;
-  }
-
-  .u-section-1 .u-layout-cell-2 {
-    min-height: 100px;
-  }
-
-  .u-section-1 .u-form-1 {
-    width: 360px;
-  }
+.form-footer a {
+  color: #8c8c8c;
+  text-decoration: none;
+  transition: border-color 0.3s;
 }
 
-@media (max-width: 767px) {
-  .u-section-1 .u-sheet-1 {
-    min-height: 763px;
-  }
-
-  .u-section-1 .u-image-1 {
-    min-height: 543px;
-  }
-
-  .u-section-1 .u-container-layout-1 {
-    padding-left: 10px;
-    padding-right: 10px;
-  }
-}
-
-@media (max-width: 575px) {
-  .u-section-1 .u-sheet-1 {
-    min-height: 562px;
-  }
-
-  .u-section-1 .u-image-1 {
-    min-height: 342px;
-  }
-
-  .u-section-1 .u-form-1 {
-    width: 340px;
-  }
+.form-footer a:hover {
+  border-bottom: 1px dotted #8c8c8c;
 }

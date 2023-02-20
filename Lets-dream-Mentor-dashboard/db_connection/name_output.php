@@ -14,7 +14,7 @@ $mail = $feedback_display[0]['recieved'];
 
 // $query_delete = 'TRUNCATE TABLE recieve' ;
 // mysqli_query($conn,$query_delete);
-require '/Applications/XAMPP/xamppfiles/htdocs/Lets-dream-test-2062017/LOGIN_PAGE/login.php';
+require 'C:\xampp\htdocs\lets_dream\LOGIN_PAGE\login.php';
 $query = 'SELECT * FROM mentee_table';
 $result = mysqli_query($conn, $query);
 $mentee_list = mysqli_fetch_all($result, MYSQLI_ASSOC);
