@@ -66,7 +66,7 @@
   <div class="container">
     <div class="row">
       <div class="col-lg-6">
-      <img src="images/IMG_20190425_103916.jpg" class="img-fluid pt-5 px-0 mx-0" style="max-width: 100%; height: 90%;">
+      <img src="images/IMG_20190425_103916.jpg" class="img-fluid pt-5 px-0 mx-0" style="max-width: 100%; height: auto;">
 
       </div>
       <div class="col-lg-6">
